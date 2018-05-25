@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Name: "
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@id/description"
+        android:text="Adobe"/>
+
+
+    <TextView
+        android:id="@+id/domainLabel"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/nameLabel"
+        android:text="Domain: "
+        />
+
+    <TextView
+        android:id="@+id/domain"
+        android:layout_below="@+id/name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/description"
+        android:text="adobe.com"/>
+
+    <TextView
+        android:id="@+id/breachDateLabel"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/domainLabel"
+        android:text="BreachDate: "
+        />
+
+    <TextView
+        android:id="@+id/breachDate"
+        android:layout_below="@+id/domain"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/description"
+        android:text="2013-10-04"/>
+
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/breachDateLabel"
+        android:text="Description: "
+        />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_below="@+id/breachDateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/descriptionLabel"
+        android:scrollbars="vertical"
+        android:text="hola"
+        />
+
+    <TextView
+        android:id="@+id/dataClassLabel"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/description"
+        android:text="Dataclasses: "
+        />
+
+    <TextView
+        android:id="@+id/dataClasses"
+        android:layout_below="@+id/description"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/description"
+        android:text="[Email addresses,Password hints,Passwords,Usernames]"/>
+
+</RelativeLayout>
